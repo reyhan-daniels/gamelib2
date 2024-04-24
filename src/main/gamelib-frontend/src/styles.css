@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import "C:/Users/16464/IdeaProjects/gamelibrary/src/main/gamelib-frontend/node_modules/bootstrap/dist/css/bootstrap.css";
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #0e0e0e;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #0e0e0e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar {
+    justify-content: center;   
+}

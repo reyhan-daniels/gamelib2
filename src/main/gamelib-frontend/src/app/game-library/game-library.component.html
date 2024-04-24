@@ -1,0 +1,27 @@
+<h2 class="text-center"> Game Library </h2>
+<table class = "table table-striped">
+    
+    <thead>
+        <tr>
+            <th> Title </th>
+            <th> Year </th>
+            <th> Rating </th>
+            <th> Edit </th>
+            <th> Remove </th>
+        </tr>
+    </thead>    
+    <tbody >
+        <tr *ngFor="let game of games" >
+            <td> {{ game.title }} </td>
+            <td> {{ game.year }} </td>
+            <td> {{ game.rating }} </td>
+            <td> 
+                <button (click) = "updateGame(game.id)" class = "btn btn-info"> Update </button>
+            </td>
+            <td> 
+                <button (click) = "deleteGame(game.id)" class = "btn btn-danger"> Delete </button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>

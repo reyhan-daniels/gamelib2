@@ -1,0 +1,28 @@
+<div class="col-md-12 offset-mid-3">
+
+<h3 class = "text-center"> Add Game to Library </h3>
+<form (ngSubmit) = "onSubmit()">
+    
+    <div class = "form-group text-center">
+        <label> Title </label>
+        <input type="text" class="form-control text-center" id="title" [(ngModel)] = "game.title" name = "title"> 
+    </div>
+
+    <div class = "form-group text-center">
+        <label> Year </label>
+        <input type="text" class="form-control text-center" id="year" [(ngModel)] = "game.year" name = "year"> 
+    </div>
+
+    <div class = "form-group text-center">
+        <label> Rating </label>
+        <input type="text" class="form-control text-center" id="rating" [(ngModel)] = "game.rating" name = "rating"> 
+    </div>
+    
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <button type="submit" class="btn btn-success btn-center" > Add Game </button>
+    </div>
+    
+
+</form>
+
+</div>
